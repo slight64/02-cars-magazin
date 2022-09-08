@@ -1,0 +1,55 @@
+- const navLinks = {"Подбор авто": "#","О компании": "#","Техцентр": "#","Отзывы": "#","Контакты": "#"}
+- const menueItems = ['Каталог авто','Авто с пробегом','Кредит и рассрочка','Спецпредложения','Такси в кредит']
+include _links.pug
+
+header.header
+        .header__top-box
+          .wrapper
+            .header__top
+              .header__top-location
+                include ../assets/img/address-icon.svg 
+                .header__top-location-address Россия, Москва, 38КМ МКАД, 6Бс1
+                .header__top-working-hours
+                  include ../assets/img/working-hours.svg
+                  .header__top-working-hours-time Время работы: c 08:00 до 21:00
+              .header__top-messager-box
+                include ../assets/img/whatsapp.svg
+                .header__top-messager Whatsapp
+        .header__body        
+          .wrapper
+            .header__body
+              .logo
+                .logo__burger
+                  .logo__burger-line
+                  .logo__burger-line
+                  .logo__burger-line
+                .logo__img
+                include ../assets/img/logo.svg
+                .logo__text-box
+                  .logo__name
+                  .logo__description
+              .header__body-vertical-line
+              .header__body-slogan-box
+                .header__body-slogan
+                  span.header__body-slogan-span 10 лет 
+                  | превосходим #[br] ваши ожидания
+              .header__body-nav-box
+                nav.header__body-nav
+                  +linksList(navLinks,'header__body-nav-list','header__body-nav-list-item','header__body-nav-list-link')
+              .header__body-tel-box
+                .header__body-tel-1 
+                  include ../assets/img/red-tel-icon.svg
+                  |+7 (800) 551-94-31
+                .header__body-tel-2 +7 (495) 292-18-67
+              .header__body-callcback-btn Обратный звонок
+            .header__menu
+              +btnList(menueItems,'header__menu-list','header__menu-list-item','header__menu-list-btn')
+              .header__menu-utility-btns
+                .header__menu-utility-favorites
+                  include ../assets/img/favorites-icon.svg
+                  .header__menu-utility-favorites__counter 10
+                .header__menu-utility-compare
+                  include ../assets/img/compare-icon.svg
+                  .header__menu-utility-compare__counter 12
+                .header__menu-utility-search
+                  include ../assets/img/search-icon.svg

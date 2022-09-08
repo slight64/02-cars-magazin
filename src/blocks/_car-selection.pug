@@ -1,0 +1,23 @@
+- const brandsData = ['Kia','Brilliance','Citroen','Ford','Haima','Lifan','Peugeot','UAZ','Skoda','Chery','Dongfeng','GAC','Honda','Mitsubishi','Renault','Volkswagen','CheryExeed','DW Hower','Geely','JAC','Nissan','SsangYong','Toyota','Chevrolet','FAW','Great Wall','Lada','Opel','Suzuki']
+include _links.pug
+
+
+
+
+section.car-selection
+  .wrapper
+    form.car-selection__form
+      +brandsList(brandsData,'car-selection__list','car-selection__list-item','car-selection__list-btn','brand','car-selection__label')
+      .car-selection__options-box
+        h2.car-selection__title
+          .car-selection__text-price Цена
+          .car-selection__text-price-step 0 - 500т
+          input(type="range" min="0" max="10" step="1")
+          select(name="Тип кузова")
+            option(value="" disabled selected hidden) Тип кузова 
+            option(value="Тип1") Тип1 
+            option(value="Тип2") Тип2 
+          select(name="Тип кузова")
+            option(value="" disabled selected hidden) Коробка
+            option(value="Тип2") Тип2
+            input(type="submit")

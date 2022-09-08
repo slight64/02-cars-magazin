@@ -1,0 +1,22 @@
+@import '../node_modules/swiper/swiper-bundle.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+* {
+  font-family: 'Roboto';
+  font-style: normal;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+@import './style/header.scss';
+@import './style/slider.scss';
