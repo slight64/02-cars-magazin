@@ -1,8 +1,8 @@
 @import '../node_modules/swiper/swiper-bundle.css';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 * {
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: 'Inter', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -20,3 +20,8 @@ button {
 
 @import './style/header.scss';
 @import './style/slider.scss';
+@import './style/car-selection.scss';
+@import './style/avalible-cars.scss';
+@import './style/promotional.scss';
+@import './style/callback.scss';
+@import './style/special.scss';

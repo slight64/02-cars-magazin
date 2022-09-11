@@ -1,30 +1,38 @@
 mixin cars(wrapperClass)
   div(class=wrapperClass)
     div(class=wrapperClass+'-top-box')
-      h3(class=wrapperClass+'-title')
+      h3(class=wrapperClass+'-title') Skoda Octavia
+        span 1.6 MPI MT Active
       div(class=wrapperClass+'-utility-btns')
-      include ../assets/img/favorites-icon.svg
-      include ../assets/img/compare-icon.svg
+        include ../assets/img/favorites-icon.svg
+        include ../assets/img/compare-icon.svg
     div(class=wrapperClass+'-card-slider')
-      div(class=wrapperClass+'-crad-label') Предложение дня
-      div(class=wrapperClass+'-card-label-text') Выгода до 300 000 ₽
-      div(class=wrapperClass+'-crad-bonus-box')
-        include ../assets/img/present-icon.svg
+      div(class=wrapperClass+'-card-label-box')
+        div(class=wrapperClass+'-card-label') Предложение дня
+        div(class=wrapperClass+'-card-label-text')
+          | Выгода
+          br
+          | до 300 000 ₽
+      div(class=wrapperClass+'-card-bonus-box')
+        div(class=wrapperClass+'-card-svg-wrapper')
+          include ../assets/img/present-icon.svg
         div(class=wrapperClass+'-bonus-title') Оборудование
-        div(class=wrapperClass+'-bonus-highlight') в подарок
-      div(class=wrapperClass+'-crad-bonus-box')
-        include ../assets/img/present-icon.svg
+          span(class=wrapperClass+'-bonus-highlight') в подарок
+      div(class=wrapperClass+'-card-bonus-box')
+        div(class=wrapperClass+'-card-svg-wrapper')
+          include ../assets/img/present-icon.svg
         div(class=wrapperClass+'-bonus-title') КАСКО
-        div(class=wrapperClass+'-bonus-highlight') в подарок
-      div(class=wrapperClass+'-crad-bonus-box')
-        include ../assets/img/present-icon.svg
-        div(class=wrapperClass+'-bonus-title') Комплект резины
-        div(class=wrapperClass+'-bonus-highlight') в подарок
+          span(class=wrapperClass+'-bonus-highlight') в подарок
+      div(class=wrapperClass+'-card-bonus-box')
+        div(class=wrapperClass+'-card-svg-wrapper')
+          include ../assets/img/present-icon.svg
+        div(class=wrapperClass+'-bonus-title') Комплект резины 
+          span(class=wrapperClass+'-bonus-highlight') в подарок
     div(class=wrapperClass+'-info-box')
       div(class=wrapperClass+'-'+'price-box')
         div(class=wrapperClass+'-price') от 1 615 000 ₽ 
         div(class=wrapperClass+'-credit') Кредит
-          span от 115 000 ₽/мес.
+          span  от 115 000 ₽/мес.
       div(class=wrapperClass+'-options-box')
         div(class=wrapperClass+'-options-item')
           include ../assets/img/motor-icon.svg
@@ -38,19 +46,19 @@ mixin cars(wrapperClass)
         div(class=wrapperClass+'-options-item')
             include ../assets/img/stopwatch-icon.svg
             div(class=wrapperClass+'-options-text') 10,3 c.
-      div(class=wrapperClass+'buttons')
-        button(class=wrapperClass+'-options-btn') Резерв онлайн
-        button(class=wrapperClass+'-options-btn') Купить
-        button(class=wrapperClass+'-options-btn') Подробнее
+      div(class=wrapperClass+'-buttons')
+        button(class=wrapperClass+'-options-btn' class=wrapperClass+'-options-btn--red') Резерв онлайн
+        button(class=wrapperClass+'-options-btn' class=wrapperClass+'-options-btn--black') Купить
+        button(class=wrapperClass+'-options-btn' class=wrapperClass+'-options-btn--grey') Подробнее
 
 section.avalible-cars
   .wrapper
-    h1.avalible-cars__title Skoda Octavia 1.6 MPI MT Active 
-      .avalible-cars__greed
-        +cars('avalible-cars__card')
-        +cars('avalible-cars__card')
-        +cars('avalible-cars__card')
-        +cars('avalible-cars__card')
-        +cars('avalible-cars__card')
-        +cars('avalible-cars__card')
-      button.avalible-cars__more-btn
+    h1.avalible-cars__title Автомобили в наличии с ПТС
+    .avalible-cars__greed
+      +cars('avalible-cars__card')
+      +cars('avalible-cars__card')
+      +cars('avalible-cars__card')
+      +cars('avalible-cars__card')
+      +cars('avalible-cars__card')
+      +cars('avalible-cars__card')
+    button.avalible-cars__more-btn

@@ -1,0 +1,66 @@
+.callback {
+  margin-top: 90px;
+}
+.callback__wrapper {
+  color: #ffffff;
+
+  background-image: url('./assets/img/callback-bg.jpg');
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.callback__title {
+  font-weight: 900;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.callback__form {
+  margin-top: 30px;
+  display: flex;
+}
+.callback__text {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  & span {
+    color: red;
+  }
+}
+.callback__telephone {
+  width: 50%;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 25px;
+  border-radius: 6px;
+  color: #262626;
+  outline: none;
+  &::placeholder {
+    color: #262626;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+.callback__submit {
+  width: 50%;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  margin-left: 40px;
+  padding: 25px;
+  background: #ca0100;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+}
+.callback__personal-data {
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 13px;
+  color: #737373;
+}
+.callback__personal-data-link {
+  cursor: pointer;
+  text-decoration: underline;
+}

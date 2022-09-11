@@ -1,0 +1,173 @@
+.avalible-cars {
+  margin-top: 64px;
+}
+
+.wrapper {
+}
+
+.avalible-cars__title {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}
+
+.avalible-cars__greed {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.avalible-cars__card {
+  padding: 25px 30px;
+  border: 1px solid #e1e1e1;
+  border-radius: 25px;
+  background-image: url('./assets/img/card-bg.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 top;
+}
+
+.avalible-cars__card-top-box {
+  justify-content: space-between;
+  display: flex;
+}
+
+.avalible-cars__card-title {
+  font-weight: 700;
+  font-size: 27px;
+  span {
+    display: block;
+  }
+}
+
+.avalible-cars__card-utility-btns {
+  padding: 0;
+  font-size: 0;
+  & svg {
+    width: 18px;
+    height: 16px;
+    margin-left: 8px;
+    font-size: 0;
+  }
+}
+
+.avalible-cars__card-card-slider {
+  background-image: url('./assets/img/card-car.png');
+
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.avalible-cars__card-card-label-box {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.avalible-cars__card-card-label {
+  color: #ffffff;
+  position: relative;
+  padding: 6px 15px;
+  background: #ca0100;
+  border-radius: 4px;
+}
+
+.avalible-cars__card-card-label-text {
+  color: #ca0100;
+  font-weight: 500;
+  font-size: 12px;
+  margin-left: 15px;
+}
+
+.avalible-cars__card-card-bonus-box {
+  margin-top: 10px;
+  align-items: flex-start;
+  display: flex;
+}
+.avalible-cars__card-card-svg-wrapper {
+  background: #000;
+  font-size: 0;
+  padding: 8px;
+  border-radius: 50%;
+}
+.avalible-cars__card-bonus-title {
+  max-width: 100px;
+  margin-left: 8px;
+}
+
+.avalible-cars__card-bonus-highlight {
+  display: block;
+  color: #ca0100;
+}
+
+.avalible-cars__card-info-box {
+  margin-top: 30px;
+}
+
+.avalible-cars__card-price-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.avalible-cars__card-price {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.avalible-cars__card-credit {
+  font-weight: 400;
+  font-size: 16px;
+
+  & span {
+    font-weight: 700;
+  }
+}
+
+.avalible-cars__card-options-box {
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.avalible-cars__card-options-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  border: 1px solid #c2c2c4;
+  border-radius: 20px;
+  margin-right: 6px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.avalible-cars__card-options-text {
+  margin-left: 5px;
+}
+
+.avalible-cars__card-buttons {
+  margin-top: 25px;
+}
+
+.avalibl .avalible-cars__more-btn {
+}
+.avalible-cars__card-options-btn {
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: #ffffff;
+  &--red {
+    background: #ca0100;
+  }
+  &--black {
+    background: #262626;
+  }
+  &--grey {
+    background: #737373;
+  }
+  &:hover {
+    background: #c2c2c4;
+  }
+}
