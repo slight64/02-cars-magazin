@@ -14,7 +14,7 @@ mixin brandsList(obj,ulClassName,liClassName,btnClassName,radioName,labelClass)
   div(class=ulClassName)
     each val in obj
       div(class=liClassName)
-        label(class=labelClass)
+        label(class=labelClass for="radioName"+val)
           img(src=`./assets/img/brands/`+val.split(' ').join('-')+`.png` alt="")
-          input(type="radio" class=btnClassName name=radioName)
-          |#{val}
+          input(type="checkbox" class=btnClassName id='radioName'+val)
+          span=val

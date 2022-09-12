@@ -1,11 +1,44 @@
 .slider {
   margin-top: 28px;
-
 }
+
 .slider__box {
   margin: 0 auto;
   width: 1870px;
+}
 
+.slider_img {
+  position: relative;
+}
+.slider__text-box {
+  width: 50%;
+  top: 70;
+  left: 230;
+  position: absolute;
+}
+.slider__attention {
+  display: inline-block;
+  padding: 8px 10px;
+  background: #ca0100;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  border-radius: 33px;
+}
+
+.slider__sale-text {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 60px;
+  color: #262626;
+}
+
+.slider__subtext {
+  margin-top: 30px;
+
+  font-weight: 400;
+  font-size: 29px;
+  color: #737373;
 }
 
 // .slider_tabs-box {
@@ -35,6 +68,7 @@
 // }
 // .slider_img {
 // }
+
 .slider_left-btn {
   top: 43%;
   left: 4%;

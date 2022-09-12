@@ -45,10 +45,17 @@
   padding: 0;
   font-size: 0;
   & svg {
+    cursor: pointer;
     width: 18px;
     height: 16px;
     margin-left: 8px;
     font-size: 0;
+    &:hover {
+      path {
+        stroke: #ca0100;
+        fill: #ca0100;
+      }
+    }
   }
 }
 
@@ -66,11 +73,34 @@
 }
 
 .avalible-cars__card-card-label {
+  position: relative;
   color: #ffffff;
   position: relative;
   padding: 6px 15px;
   background: #ca0100;
   border-radius: 4px;
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    width: 13px;
+    height: 3px;
+    border-radius: 16px;
+    background: #ca0100;
+    box-shadow: 0 0 0 5px #ca0100;
+  }
+  &::before {
+    left: 166px;
+    top: 10px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    bottom: 10px;
+    left: 166px;
+
+    transform: rotate(-45deg);
+  }
 }
 
 .avalible-cars__card-card-label-text {
@@ -155,19 +185,88 @@
 .avalibl .avalible-cars__more-btn {
 }
 .avalible-cars__card-options-btn {
-  padding: 10px 15px;
+  width: 33.333%;
+  position: relative;
+  padding: 10px 15px 10px 30px;
   border-radius: 6px;
   color: #ffffff;
+  margin-left: -10px;
+  &:first-child {
+    margin-left: 0;
+    padding: 10px;
+  }
   &--red {
+    z-index: 3;
     background: #ca0100;
+
+    &::before,
+    &::after {
+      background: #ca0100;
+      box-shadow: 0 0 0 6px #ca0100;
+    }
+
+    &:hover {
+      background: #a90100;
+    }
+    &:hover::before,
+    &:hover::after {
+      background: #a90100;
+      box-shadow: 0 0 0 6px #a90100;
+    }
   }
   &--black {
+    z-index: 2;
     background: #262626;
+    &::before,
+    &::after {
+      background: #262626;
+      box-shadow: 0 0 0 6px #262626;
+    }
+    &:hover {
+      background: #000000;
+    }
+    &:hover::before,
+    &:hover::after {
+      background: #000000;
+      box-shadow: 0 0 0 6px #000000;
+    }
   }
   &--grey {
+    z-index: 1;
     background: #737373;
+    &::before,
+    &::after {
+      background: #737373;
+      box-shadow: 0 0 0 6px #737373;
+    }
+    &:hover {
+      background: #595d60;
+    }
+    &:hover::before,
+    &:hover::after {
+      background: #595d60;
+      box-shadow: 0 0 0 6px #595d60;
+    }
   }
-  &:hover {
-    background: #c2c2c4;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 3px;
+    border-radius: 16px;
+  }
+  &::before {
+    left: 121px;
+    top: 12px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    bottom: 12px;
+    left: 121px;
+
+    transform: rotate(-45deg);
   }
 }

@@ -4,8 +4,10 @@ mixin cars(wrapperClass)
       h3(class=wrapperClass+'-title') Skoda Octavia
         span 1.6 MPI MT Active
       div(class=wrapperClass+'-utility-btns')
-        include ../assets/img/favorites-icon.svg
-        include ../assets/img/compare-icon.svg
+        button(class=wrapperClass+'-utility-btn' type="button")
+          include ../assets/img/favorites-icon.svg
+        button(class=wrapperClass+'-utility-btn' type="button")
+          include ../assets/img/compare-icon.svg
     div(class=wrapperClass+'-card-slider')
       div(class=wrapperClass+'-card-label-box')
         div(class=wrapperClass+'-card-label') Предложение дня

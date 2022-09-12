@@ -24,6 +24,7 @@
 }
 
 .car-selection__label {
+  cursor: pointer;
   font-weight: 400;
   font-size: 14px;
   color: #262626;
@@ -33,7 +34,10 @@
     margin-right: 10px;
   }
 }
-
+.car-selection__list-btn:checked + span {
+  color: #ca0100;
+  text-decoration: underline;
+}
 .car-selection__list-btn {
   position: absolute;
   z-index: -1;
@@ -81,6 +85,25 @@
 
 .car-selection__input {
   margin-top: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background: -webkit-linear-gradient(
+    left,
+    #ca0100 0%,
+    #ca0100 12%,
+    #e1e1e1 12%,
+    #e1e1e1 100%
+  );
+
+  -webkit-appearance: none;
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ca0100;
+    cursor: pointer;
+  }
 }
 
 .car-selection__select-box {

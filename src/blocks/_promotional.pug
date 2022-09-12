@@ -3,18 +3,18 @@ mixin promotionalCards(cardClass, path, alt, text)
     img(class=cardClasss+'image' src=path, alt=alt)
     div(class=cardClass+'card-bottom')
       div(class=cardClass+'card-text')=text
-      button(class=cardClass+'card-button') Посмотреть
+      button(class=cardClass+'card-button' type="button") Посмотреть
 
 section.promotional
   .wrapper
     .promotional__top
       .promotional__title-box
         h2.promotional__title Наши подборки
-        button.promotional__btns-all Все подборки
+        button(type="button").promotional__btns-all Все подборки
       .promotional__slider-btns
-        button.promotional__slider-btn.promotional__slider-btn--left
+        button(type="button").promotional__slider-btn.promotional__slider-btn--left
           include ../assets/img/arrow.svg
-        button.promotional__slider-btn.promotional__slider-btn--right
+        button(type="button").promotional__slider-btn.promotional__slider-btn--right
           include ../assets/img/arrow.svg 
     .promotional__slider-box
       +promotionalCards('promotional__','./assets/img/promotion-1.jpg','promotion','Семейные автомобили')
